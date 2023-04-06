@@ -1,0 +1,243 @@
+.left-content {
+  width: 872px;
+  // background-color: antiquewhite;
+}
+
+.left-content .title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+
+  .left {
+    font-size: 22px;
+    color: #323235;
+    padding-left: 30px;
+    background: url(../img/main_sprite.png) no-repeat 0 -102px;
+  }
+
+  .right {
+    color: #f3c258;
+    padding-left: 22px;
+    background: url(../img/main_sprite.png) no-repeat -252px 4px;
+  }
+}
+
+.left-content .nav-list {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  line-height: 29px;
+  color: #999;
+  background-color: #f5f5f5;
+
+  .item {
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+  }
+
+  .line {
+    width: 1px;
+    height: 20px;
+    background-color: #e1e1e1;
+  }
+
+  .active {
+    color: #323235;
+    border-color: #f3c258;
+  }
+}
+
+.left-content .content-wrapper {
+  margin-top: 10px;
+}
+
+.tab-keyword {
+  display: flex;
+  flex-wrap: wrap;
+
+  .item {
+    height: 24px;
+    color: #333;
+    border: 1px solid #e5e5e5;
+    color: #333;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    cursor: pointer;
+
+    margin: 0 8px 10px 0;
+    padding: 0 15px;
+  }
+
+  .item:hover {
+    color: #fff;
+    background-color: #f3c258;
+  }
+
+  .active {
+    color: #fff;
+    background-color: #f3c258;
+  }
+}
+
+.video-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .item {
+    display: block;
+    width: 212px;
+    margin-bottom: 20px;
+    // background-color: sandybrown;
+  }
+
+  .item:hover .cover {
+    // display: block;
+    opacity: 1;
+  }
+
+  .album {
+    position: relative;
+    border-radius: 3px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+
+    .info {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.5);
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2px 8px;
+      font-size: 12px;
+
+      .count {
+        padding-left: 16px;
+        background: url(../img/main_sprite.png) no-repeat -256px -59px;
+      }
+    }
+
+    .cover {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+
+      opacity: 0;
+      // display: none;
+      transition: all 300ms ease-in;
+    }
+
+    .icon_play {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 40px;
+      height: 40px;
+      background: url(../img/main_sprite.png) no-repeat -192px -64px;
+    }
+  }
+
+  .desc {
+    margin-top: 8px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}
+
+.left-content .section-game .game {
+  background-position: 0 -180px;
+}
+
+.section-game {
+  .tab-control {
+    display: flex;
+    align-items: center;
+
+    height: 32px;
+    line-height: 25px;
+    color: #999;
+    background-color: #eee;
+    cursor: pointer;
+
+    .item {
+      padding: 0 27px;
+      border-bottom: 3px solid transparent;
+    }
+
+    .item.active,
+    .item:hover {
+      color: #333;
+      border-bottom-color: #f3c258;
+    }
+
+    .line {
+      width: 1px;
+      height: 20px;
+      background-color: #e1e1e1;
+    }
+  }
+
+  .match-news {
+    display: flex;
+    height: 260px;
+    margin: 20px 0 15px;
+
+    .left-album {
+    }
+
+    .right-list {
+      flex: 1;
+      padding: 0 15px;
+      box-sizing: border-box;
+      overflow: hidden;
+
+      .title {
+        font-size: 24px;
+        color: #333;
+        padding-right: 80px;
+      }
+
+      .subtitle {
+        padding-right: 160px;
+        color: #666;
+      }
+
+      .new-list .item {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+
+        .desc {
+          flex: 1;
+          padding-right: 50px;
+        }
+
+        .date {
+          font-size: 12px;
+          color: #b8b9c5;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,133 @@
+.header {
+  position: relative;
+  width: 100%;
+  height: 84px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.header .area {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.header .left-logo {
+  width: 200px;
+}
+
+.header .center-nav {
+  height: 100%;
+
+  .nav-list {
+    height: 100%;
+    display: flex;
+    margin-left: 30px;
+
+    .item {
+      width: 110px;
+      padding-top: 20px;
+    }
+
+    a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      color: #c9c9dd;
+    }
+
+    .desc {
+      font-size: 12px;
+      color: #858792;
+      margin-top: 8px;
+    }
+  }
+
+  .active {
+    background: url(../img/main_sprite.png) no-repeat 0 0;
+
+    a {
+      color: #e4b653;
+    }
+
+    .desc {
+      color: #91763f;
+    }
+  }
+}
+
+.header .dropmenu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 84px;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: height 300ms ease-in;
+  overflow: hidden;
+
+  .inner {
+    display: flex;
+    margin: 0 auto;
+    width: 940px;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 15px 0 30px 50px;
+  }
+
+  .list {
+    width: 115px;
+    padding-top: 5px;
+    text-align: center;
+
+    .item {
+      height: 30px;
+      line-height: 30px;
+    }
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+    }
+
+    a:hover {
+      color: #f3c258;
+      text-decoration: underline;
+    }
+  }
+}
+
+.header:hover .dropmenu {
+  height: 285px;
+}
+
+.header .right-area {
+  display: flex;
+  align-items: center;
+  color: #858792;
+
+  .search-icon a {
+    display: block;
+    width: 27px;
+    height: 26px;
+    background: url(../img/nav_search.png);
+    margin: 0 50px 0 20px;
+  }
+
+  .header_logo {
+    border: 1px solid #d9ad50;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  a {
+    color: #fff;
+  }
+
+  .login-info p {
+    margin-top: 5px;
+  }
+}

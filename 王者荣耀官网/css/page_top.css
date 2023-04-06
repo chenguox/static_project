@@ -1,0 +1,64 @@
+.top .area {
+  display: flex;
+  justify-content: space-between;
+  height: 41px;
+  line-height: 41px;
+  /* background-color: skyblue; */
+}
+
+.top .left-area {
+  display: flex;
+}
+
+.left-area .logo {
+  width: 130px;
+  height: 100%;
+  background: url(../img/top_logo.png) no-repeat;
+}
+
+.left-area a {
+  position: relative;
+  left: -99999px;
+}
+
+.top .right-area {
+  position: relative;
+  display: flex;
+}
+
+.right-area .guard {
+  display: flex;
+  align-items: center;
+}
+
+.right-area .rank {
+  margin-left: 20px;
+  padding-right: 30px;
+}
+
+.dropdown::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  background: url(../img/top_sprite.png) no-repeat 0 0;
+  transform: rotate(90deg);
+  opacity: 0.2;
+}
+
+/* 精灵图 */
+.top_sprite {
+  background-image: url(../img/top_sprite.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+i.circle-icon {
+  background-position: -30px 0;
+  width: 30px;
+  height: 30px;
+}

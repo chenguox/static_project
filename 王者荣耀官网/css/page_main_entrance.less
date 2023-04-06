@@ -1,0 +1,25 @@
+.main-entrance {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 134px;
+  margin-top: 20px;
+  // background-color: aquamarine;
+
+  .item {
+    width: 291px;
+    height: 134px;
+    overflow: hidden;
+  }
+
+  .item img {
+    width: 100%;
+    height: 100%;
+    transition: transform 400ms ease;
+  }
+
+  .item:hover img {
+    transform: scale(1.1);
+  }
+}
